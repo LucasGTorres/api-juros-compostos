@@ -10,4 +10,8 @@ public class ApiJurosCompostosApplication {
 		SpringApplication.run(ApiJurosCompostosApplication.class, args);
 	}
 
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c0055e155b2ddce4f0ef0398da8cbdf7f34c29c9

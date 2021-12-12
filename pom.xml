@@ -29,16 +29,23 @@
 			<optional>true</optional>
 		</dependency>
 		<dependency>
+<<<<<<< HEAD
 		    <groupId>org.projectlombok</groupId>
 		    <artifactId>lombok</artifactId>
 		    <version>1.18.12</version>
 		    <scope>provided</scope>
+=======
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<optional>true</optional>
+>>>>>>> c0055e155b2ddce4f0ef0398da8cbdf7f34c29c9
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+<<<<<<< HEAD
 
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
@@ -51,6 +58,8 @@
 		    <artifactId>gson</artifactId>
 		    <version>2.8.5</version>
 		</dependency>
+=======
+>>>>>>> c0055e155b2ddce4f0ef0398da8cbdf7f34c29c9
 	</dependencies>
 
 	<build>

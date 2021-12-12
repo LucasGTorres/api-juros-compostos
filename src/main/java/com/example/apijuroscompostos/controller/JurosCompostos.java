@@ -23,7 +23,7 @@ import com.google.gson.Gson;
 @RequestMapping(value="/api")
 public class JurosCompostos extends CalculosJurosCompostos {
 	
-    @PostMapping("/produto")
+    @PostMapping("/juros-compostos")
     public String jurosCompostosComAporteMensal(@RequestBody @Valid JurosCompostosModel data) throws Exception {
     	Gson gson = new Gson();
     	String json = gson.toJson(calculaJurosCompostosAporteMensal(data));
