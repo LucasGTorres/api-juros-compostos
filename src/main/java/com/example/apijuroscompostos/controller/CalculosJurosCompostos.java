@@ -28,9 +28,9 @@ public class CalculosJurosCompostos {
 		
 		jurosTotal = total.subtract(totalSemJuros);
 		
-    	resultado.put("jurosTotal", jurosTotal.setScale(2));
-    	resultado.put("montanteSemJuros", totalSemJuros.setScale(2));
-    	resultado.put("montanteComJuros", total.setScale(2));
+    	resultado.put("jurosTotal", jurosTotal.setScale(2, RoundingMode.HALF_EVEN));
+    	resultado.put("montanteSemJuros", totalSemJuros.setScale(2, RoundingMode.HALF_EVEN));
+    	resultado.put("montanteComJuros", total.setScale(2, RoundingMode.HALF_EVEN));
     	
 		return resultado;
 	}
