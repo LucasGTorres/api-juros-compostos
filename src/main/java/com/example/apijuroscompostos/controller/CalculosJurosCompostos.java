@@ -20,6 +20,8 @@ public class CalculosJurosCompostos {
 		BigDecimal totalParcial1 = new BigDecimal("0");
 		BigDecimal totalParcial2 = new BigDecimal("0");
 
+		data.setJuros(data.getJuros().divide(new BigDecimal("100")));
+		
 		totalParcial1 = data.getValorInicial().multiply((new BigDecimal("1").add(data.getJuros())).pow(data.getPeriodo()));
 		totalParcial2 = data.getAporteMensal().multiply((new BigDecimal("1").add(data.getJuros())).pow(data.getPeriodo()).subtract(new BigDecimal("1"))).divide(data.getJuros(), RoundingMode.HALF_EVEN);
 		total = totalParcial1.add(totalParcial2);
